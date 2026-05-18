@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/finalstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title>Edit Profile</title>
+    </head>
+    <body>
+        <h1 class=name>
+            Welcome back, {{username}}<br>
+            <img src="{{image}}" style="width:150px; border-radius:100px;"><br>
+        </h1>
+        <a href="/changepicture.html" class= Log >Change Profile Picture</a>
+        <br>
+        <br>
+        <a href="/feed.html" class=Log>Feed</a>
+        <div>
+            <br>
+            Text:<br><textarea id="text" name="text" style="width:300px;"></textarea>
+            <br><button onclick="upload_post();">Upload</button>
+        </div>
+        <br>
+        <a href="/twitterLogout.html" class=Log>Log out</a>
+        <br>
+        <br>
+        <div id="divResults"></div>
+        <script src="/static/finalscript.js"></script>
+        <script>
+            editposts();
+        </script>
+    </body>
+</html>

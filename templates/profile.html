@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/finalstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title> Profile</title>
+    </head>
+    <body>
+        <h1 class=name>
+            {{username}}<br>
+            <img src="{{image}}" style="width:150px; border-radius:100px;"><br>
+        </h1>
+        <a href="/feed.html" class=Log> Back to Feed</a><br>
+        <br>
+        <div id="divResults"></div>
+        <script src="/static/finalscript.js"></script>
+        <script>
+            profileposts("{{username}}");
+        </script>
+    </body>
+</html>

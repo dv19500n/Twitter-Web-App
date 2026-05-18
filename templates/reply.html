@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/finalstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title>Reply</title>
+    </head>
+    <body>
+        <h1 class=name>
+            Relpy to {{username}}<br>
+        </h1>
+        <a href="/feed.html" class=Log> Back to Feed</a><br>
+        <div>
+            <br>
+            Text:<br><textarea id="text" name="text" style="width:225px;"></textarea>
+            <br><button onclick="upload_reply('{{uniqueID}}');">Upload</button>
+        </div>
+        <br>
+        <div id="post"></div>
+        <h2 class=word>Replies</h2>
+        <div id="divResults"></div>
+        <script src="/static/finalscript.js"></script>
+        <script>replypost("{{uniqueID}}");</script>
+        <script>
+            postsreplies("{{uniqueID}}");
+        </script>
+    </body>
+</html>

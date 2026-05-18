@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/finalstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title>Feed</title>
+    </head>
+    <body>
+        <h1 class=name>
+            {{username}}'s Feed <br>
+            <img src="{{image}}" style="width:150px; border-radius:100px;"><br>
+        </h1>
+        <br><br>
+        <a href="/editprofile.html" class=Log>My Profile</a><br><br>
+        <a href="/twitterLogout.html" class=Log>Log out</a><br>
+        <br>
+        <div id="divResults"></div>
+        <script src="/static/finalscript.js"></script>
+        <script>
+            posts();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/finalstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <title>Change Profile Picture</title>
+    </head>
+    <body>
+        <h1 class=name>
+            {{username}} Current Picture<br>
+            <img src="{{image}}" style="width:150px; border-radius:100px;"><br>
+        </h1>
+        <div>
+            Change Picture To:<br>
+            <input type="file" id="file">
+            <button onclick= "change_picture();" >Upload</button><br>
+            <br>
+            <a href="/editprofile.html" class=Log>Return to Profile</a><br>
+        </div>
+        <script src="/static/finalscript.js"></script>
+    </body>
+</html>
